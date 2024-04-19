@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #030712;
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+.header {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(3, 7, 18, 0.8);
+    .header-icon {
+        height: 40px;
+    }
+    .header-social-media {
+        .header-social-media-icon {
+            width: 26px !important;
+        }
+    }
+}
+
+.home {
+    .home-des {
+        width: 100%;
+        max-width: 700px;
+        .personal-status {
+            width: 8px;
+            aspect-ratio: 1/1;
+            background: #10b981;
+            border-radius: 50%;
+        }
+    }
+    .personal-img-wrapper {
+        width: 460px;
+        max-width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #e70faa, #00c0fd);
+        .personal-img {
+            position: relative;
+            border-radius: 50%;
+            height: calc(100% - 30px);
+            width: calc(100% - 30px);
+            background-image: url("/src/assets/images/avatar.jpg");
+            background-position: top center;
+            background-size: cover;
+            filter: grayscale(80%);
+        }
+    }
+}
+
+.session-title {
+    background: #374151;
+    border-radius: 12px;
+    padding: 4px 20px;
+}
+
+.skills {
+    .skill-item {
+        flex-shrink: 1;
+        width: 110px;
+    }
+}
+
+.experience {
+    .experience-details-item {
+        border-radius: 12px;
+        background: #1f2937;
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+        .company-logo-wrapper {
+            background: rgba(229, 231, 235, 0.6);
+        }
+    }
+}
+
+.projects {
+    .project {
+        background: #1f2937;
+        box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        .develop-by {
+            left: 0;
+            top: 0;
+            background: #adb5bd;
+            padding: 10px;
+            border-radius: 0 0 12px 0;
+            &.reverse {
+                left: auto;
+                right: 0;
+                border-radius: 0 0 0 12px;
+            }
+            &.text-logo-wrapper {
+                background: rgba(31, 41, 55, 0.8);
+                .text-logo {
+                    background: linear-gradient(to right, #e70faa, #00c0fd);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .project-review {
+            background: #374151;
+            .img {
+                border-radius: 12px;
+                box-shadow:
+                    0 10px 8px 0 rgba(0, 0, 0, 0.04),
+                    0 4px 3px 0 rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "hainguyen27798.github.io",
+    "version": "1.0.0",
+    "description": "Overview harry's project and tech stacks",
+    "main": "index.html",
+    "scripts": {
+        "watch": "tailwindcss -i ./src/scss/main.scss -o ./dist/style.min.css --minify --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hainguyen27798/hainguyen27798.github.io.git"
+    },
+    "author": "Harry Nguyen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hainguyen27798/hainguyen27798.github.io/issues"
+    },
+    "homepage": "https://github.com/hainguyen27798/hainguyen27798.github.io#readme",
+    "devDependencies": {
+        "autoprefixer": "^10.4.19",
+        "postcss": "^8.4.38",
+        "postcss-import": "^16.1.0",
+        "postcss-nesting": "^12.1.1",
+        "tailwindcss": "^3.4.3"
+    }
+}
